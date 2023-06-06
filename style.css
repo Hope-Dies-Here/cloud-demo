@@ -2,13 +2,17 @@
 #colorP{
  position: absolute;
  top: .5em;
- left: 4rem;
+ left: 1rem;
  border: 1px solid black;
  padding: .2em .4em;
 }
 #colorP div{
   display: inline;
   margin-inline: 1em;
+}
+#colorP div input{
+  /* width: 1em; */
+  height: 1em;
 }
 body {
   display: grid;
@@ -60,8 +64,11 @@ main {
 .doctor-patients {
   margin-left: 18em;
 }
-.navigations a {
+.navigations{
   color: white;
+}
+.navigations a {
+  color: inherit;
   margin-inline: 1em;
 }
 

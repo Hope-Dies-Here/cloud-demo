@@ -1,13 +1,14 @@
 const colorP = document.getElementById("inpColor")
 const fontColor = document.getElementById("fontColor")
-const theFont = document.getElementsByClassName("theFont")
+const theFont = document.querySelectorAll(".theFont")
 const main = document.getElementById("main")
 
 colorP.addEventListener("input", () => {
   main.style = `background-image: none; background-color: ${colorP.value};`
 })
+  // console.log(theFont.length)
 fontColor.addEventListener("input", () => {
-  console.log(theFont)
-  
-  theFont.style = `color: ${fontColor.value}!important;`
+  theFont.forEach(font => {
+    font.style = `color: ${fontColor.value}!important;`
+  })
 })
