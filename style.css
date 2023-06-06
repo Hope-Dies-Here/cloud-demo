@@ -12,6 +12,8 @@ body {
 /* header */
 main {
   background-color: #4d5dfb;
+  background-image: linear-gradient(12deg, #4d5dfb 31%, #08c8f6 70%);
+  background-size: 400% 200%;
   width: 85%;
   overflow-y: scroll;
   border: 1px solid gray;
@@ -26,7 +28,7 @@ main {
   justify-content: space-between;
   padding-inline: 4em;
   align-items: center;
-  background-color: #485c9f;
+  bbackground-color: #485c9f;
   height: 5em;
 }
 .main-tittle h3 {
@@ -51,9 +53,9 @@ main {
 }
 
 .challenges {
-  background-color: #5569ac;
+  bbackground-color: #5569ac;
   padding-bottom: 2em;
-  opacity: .95;
+  opacity: ;
   padding-top: .8em;
 }
 .challenges #title {
@@ -105,7 +107,7 @@ img {
   margin-bottom: 0;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid purple;
+  border: 3px solid #08c8f6;
 }
 .img {
   /* border: 2px solid red; */
@@ -157,7 +159,7 @@ justify-content: space-around;
 }
 .btn {
   padding: 0.6em 0em;
-  background-color: #5569ac;
+  background-color: #08c8f6;
   border: none;
   border-radius: 10px;
   color: #ffffff;
