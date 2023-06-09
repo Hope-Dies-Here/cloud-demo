@@ -9,7 +9,7 @@ let fCol = localStorage.getItem("font-color");
 if (bgCol && fCol) {
   main.style = `background-image: none; background-color: ${bgCol};`;
   theFont.forEach((font) => {
-    font.style = `color: ${fCol}!important;`;
+    font.style = `color: ${fCol}!important; border-color: ${fCol};`;
   });
 }
 colorP.addEventListener("input", () => {

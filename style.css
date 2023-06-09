@@ -6,7 +6,7 @@
  justify-content: center;
  width: 5rem;
  font-size: 9px;
- top: .5em;
+ top: 50%;
  left: .2rem;
  border: 1px solid black;
  padding: .2em .4em;
@@ -41,8 +41,8 @@ main {
   overflow-y: auto;
   border: 1px solid gray;
   /* min-height: 80%; */
-  max-height: 32rem;
-  height: 32rem;
+  max-height: 35rem;
+  height: 35rem;
   /* min-height: 30rem; */
   border-radius: 15px;
   box-shadow: 3px 8px 30px rgba(0, 0, 0, .3);
@@ -87,6 +87,8 @@ main {
   padding-bottom: 2em;
   opacity: ;
   padding-top: .8em;
+  overflow: auto;
+  height: 70%;
 }
 .challenges #title {
   text-align: center;
@@ -199,6 +201,9 @@ justify-content: space-around;
 .btn:hover {
   border: 1px solid #5569ac;
 }
+button:hover{
+  cursor: pointer;
+}
 
 /* footer */
 .footer {
@@ -227,6 +232,7 @@ justify-content: space-around;
     margin: 0;
     padding: 2em 0;
     width: 100%;
+    height: 100%;
     min-height: 100%;
     position: relative;
   }
@@ -250,6 +256,7 @@ justify-content: space-around;
     background-color: white;
     margin: 7.1em 0 0 0;
     padding: 0.5em 2em;
+    height: 100vh!important;
   }
   .challenges #title{
     color: black;
@@ -267,6 +274,25 @@ justify-content: space-around;
   .card img{
     margin-left: .8em;
   }
+  
+  .home-section{
+    padding-top: 8em;
+    flex-wrap: wrap;
+    height: 100%;
+  }
+  #profile-left{
+    height: fit-content!important;
+    overflow: none;
+    width: 100%!important;
+  }
+  #profile-right{
+    width: 90%!important;
+  }
+  #prof-proj-cont{
+    overflow-y: none!important;
+    height: fit-content!important;
+    
+  }
 }
 
 @media (max-width: 1100px) {
@@ -275,7 +301,8 @@ justify-content: space-around;
     
   }
   main {
-    /* height: 90%; */
+    hheight: 100%; 
+    height: 30rem;
     /* background-color: green; */
     /* background-color: white; */
     hheight: fit-content;
@@ -287,6 +314,10 @@ justify-content: space-around;
   }
   .navbar a{
     font-size: .7rem;
+  }
+  .challenges{
+    height: 70%;
+    overflow: auto;
   }
   #title{
     margin-top: 0;
@@ -316,19 +347,21 @@ justify-content: space-around;
     /* background-color: red; */
   }
   main{
-    max-height: 80%;
-    min-height: 80%;
+    max-height: 90%;
   }
 }
 
 
 /* home section */
 .home-section{
+  
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 25em;
-  /* gap: 10em; */
+  align-self: center;
+  hheight: 25em;
+  height: 75%;
+  overflow: auto;
   color: white;
   border: 1px solid white;
 }
@@ -346,4 +379,70 @@ justify-content: space-around;
  border: 1px solid white;
  border-radius: 7px;
  height: 8rem;
+}
+
+#profile-left{
+  overflow: auto;
+  width: 40%;
+  /* height: 18rem; */
+  height: 75%;
+  border-right: 1px solid white;
+  padding-block: 1em;
+}
+#profile-intro{
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  margin: 1em .7em;
+  /* border-bottom: 1px solid white; */
+}
+#profile-intro img{
+  border: none;
+  height: 3.5em;
+  width: 3.5em;
+}
+#profile-details{
+  padding-inline: 2em;
+  /* border: 1px solid white; */
+}
+#profile-details p{
+  border-bottom: 1px solid white;
+  padding: .3em;
+  width: 75%;
+}
+#profile-right{
+  padding: 1em .8em;
+  height: 75%;
+  width: 40%;
+  /* overflow-y: auto; */
+  /* height: 18rem; */
+  /* border: 1px solid white; */
+}
+#profile-right h3{
+  /* text-align: center; */
+}
+#prof-proj-cont{
+  height: 80%;
+  overflow-y: auto;
+}
+.profile-projects{
+  width: 80%;
+  margin-block: 1em;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  border: 1px solid white;
+  display: grid;
+  grid-template-columns: .5fr 2fr .5fr;
+  padding-inline: 2em;
+  align-items: center;
+}
+
+.profile-projects img{
+  height: 2rem;
+  width: 2rem;
+}
+.profile-projects button{
+  width: fit-content;
+  justify-self: end;
 }
